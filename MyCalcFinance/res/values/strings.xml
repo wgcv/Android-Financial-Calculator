@@ -1,0 +1,93 @@
+<resources>
+
+    <string name="app_name">MyCalc Finance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MyCalcFinance</string>
+
+    <string-array name="menuchoices">
+        <item>Present Value</item>
+        <item>Present Value of Annuity</item>
+        <item>Present Value of Annuity Due</item>
+        <item>Future Value of Annuity</item>
+        <item>Future Value of Annuity Due</item>
+        <item>Bond Pricing</item>
+        <item>Growth Rate Calculation</item>
+        <item>Net Present Value</item>
+    </string-array>
+    
+    
+    <string name="pv0">Present Value / Future Value</string>
+    <string name="pvinfo0">Present Value / Future Value - Help Section</string>
+    <string name="pvinfo1">The logic behind this formula is that a dollar today is not worth a dollar tomorrow. For example, if you leave $1000 in the bank for a year, it will be worth more (Future Value). Similarly, when you will receive $1000 a year from now, it is worth less to you now (Present Value).</string>
+  
+    <string name="pvann0">Present Value of Annuity</string>
+    <string name="pvanninfo0">Present Value of Annuity - Help Section</string>
+    <string name="pvanninfo1">The logic behind this formula is that if you receive payments for a number of years, each successive payment is worth less to you because you have to wait for it. Five payments of $5000 for example are not worth $25,000 but less (depending on interest rate applied). This formula calculates how much less the stream of payments is worth.</string>
+  
+    <string name="pvanndue0">Present Value of Annuity Due</string>
+    <string name="pvanndueinfo0">Present Value of Annuity Due - Help Section</string>
+    <string name="pvanndueinfo1">The logic behind this formula is that if you receive payments for a number of years, each successive payment is worth less to you because you have to wait for it. Five payments of $5000 for example are not worth $25,000 but less (depending on interest rate applied). This formula calculates how much less the stream of payments is worth. However, for the Annuity Due, it is assumed that the first payment is made / received today. This means that it is essentially the cash flow today + the present value of the annuity for n-1 years.</string>
+  
+    <string name="fvann0">Future Value of Annuity</string>
+    <string name="fvanninfo0">Future Value of Annuity - Help Section</string>
+    <string name="fvanninfo1">The logic behind the Future Value of Annuity Formula is that you make equal deposits every year for a certain number of years, starting one year from now. The formula will then calculate, based on a given interest rate, how much these deposits will have accumulated to by the end of the years entered. A real world example for this would be equal deposits into a savings account for your retirement.</string>
+ 
+    <string name="fvanndue0">Future Value of Annuity Due</string>
+    <string name="fvanndueinfo0">Future Value of Annuity Due - Help Section</string>
+    <string name="fvanndueinfo1">The logic behind the Future Value of Annuity Formula Due is that you make equal deposits every year for a certain number of years, starting TODAY. The formula will then calculate, based on a given interest rate, how much these deposits will have accumulated to by the end of the years entered. A real world example for this would be equal deposits into a savings account for your retirement.</string>
+    
+    <string name="bonds0">Present Value of Bonds</string>
+    <string name="bondsinfo0">Present Value of Bonds - Help Section</string>
+    <string name="bondsinfo1">This formula calculates what the present value of a company’s bond is. A bond pays a certain number of coupon payments every year and returns the face value of the bond at its maturity (when it has run out). With this formula you can calculate how much based a bond is worth to you today, based on the return of its face value in the future as well as a series of discounted coupon payments.</string>
+    <string name="bonds_cp_hint">dollar value, not coupon rate</string>
+    
+    <string name="growth0">Growth Rate Calculation</string>
+    <string name="growthinfo0">Growth Rate Calculation - Help Section</string>
+    <string name="growthinfo1">This formula calculates at what rate dividends (or any forms of cash flows) grew over a number of years.</string>
+    <string name="growth_t_hint">years between the dividends</string>
+    
+    <string name="npv0">Net Present Value Calculation</string>
+    <string name="npv1">You have selected 0 periods so far.</string>
+    <string name="npvspecialinstructions">Choose from the slider below how many cash flows you want to discount</string>
+    <string name="npvinfo0">Net Present Value Calculation - Help Section</string>
+    <string name="npvinfo1">Placeholder</string>
+    
+	<string name="error_tooManyFieldsEmpty">Error! You left too many fields empty!</string>
+	<string name="error_featureComingSoon">Sorry! This feature will be coming soon!</string>
+	<string name="error_SwitchBreak">Error on switch break</string>
+    <string name="interestRate">Interest Rate:</string>
+    
+    
+    <string name="answer_npv">The Net Present Value of cash flows is: $</string>
+    <string name="answer_pv">The Present Value is: $</string>
+    <string name="answer_fv">The Future Value is: $</string>
+    <string name="answer_n">The number of periods per year is:</string>
+    <string name="answer_pvann">The Present Value of Annual Cash Flows is: $</string>
+    <string name="answer_cf">The Annual Cash Flows are:</string>
+    <string name="answer_r">The Interest Rate is:</string>
+    <string name="answer_t">The number of years is:</string>
+    <string name="answer_fvann">The Future Value of Annual Cash Flows is: $</string>
+    <string name="answer_bonds">The Present Value of this bond is: $</string>
+    <string name="answer_growth">The grow rate is:</string>
+    <string name="answer_div0">The Dividend today is: $</string>
+    <string name="answer_div_t">The Dividend \"T\" years ago was: $</string>
+    <string name="answer_growth_t">The number of years between dividens was:</string>
+    
+    
+    <string name="explain_PresentValue">Present Value: The value of a one-time cash flow today</string>
+    <string name="explain_FutureValue">Future Value: The future value of the Present Value, grown with cumulative interest for the number of years specified</string>
+    <string name="explain_InterestRate">Interest Rate: The interest / discount rate applied to see how much the Present Value decreases / the Future Value increases by</string>
+    <string name="explain_PresentValueAnnuity">Present Value: The present value sum of all annual payments discounted for the number of years specified</string>
+    <string name="explain_FutureValueAnnuity">Future Value: The future value sum of all annual payments with cumulative interest for the number of years specified</string>
+    <string name="explain_Years">Number of years: The number of years that you receive payments, make payments, or grow / discount money for</string>
+    <string name="explain_PeriodsPerYear">Number of Periods per year: For interst that compounds (is applied) multiple times a year, it specifies how often in one year an annual interest rate is applied</string>
+    <string name="explain_CashFlow">Cash Flow: The annual cash flow received / made each year for the number of years specified</string>
+	<string name="explain_Formula">The following equation is used:</string>
+	<string name="explain_Instructions">Please fill in the fields, leaving one empty. Hit calculate and the missing value will be calculated.</string>
+	<string name="explain_Bonds">Bonds: The present Value that a bond is worth today, taking into account both the discounted face value payment and the discounted annuity of the coupon payments.</string>
+	<string name="explain_Coupon">Coupon Payments: The coupon payment is the money that you receive each year that you are holding the bond. Sometimes you will receive coupon payments multiple times a year; this refers then to the number of periods</string>
+    <string name="explain_Div0">Div0: The dividens that were paid out this year.</string>
+    <string name="explain_DivN">Div-n: The dividends that were paid out "t" years ago.</string>
+    <string name="explain_Growth">Growth rate: The rate at which the dividend has grown every year for "t" years</string>
+</resources>
