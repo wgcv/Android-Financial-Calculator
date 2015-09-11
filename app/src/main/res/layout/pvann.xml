@@ -20,7 +20,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Present Value"
+        android:text="Valor Presente"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
@@ -36,7 +36,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cash Flow"
+        android:text="Valor de los Pagos"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -50,7 +50,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Interest Rate / Discount Rate"
+        android:text="Interes (1.xx) / Descuento (0.xx)"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -60,11 +60,27 @@
         android:ems="10"
         android:inputType="numberDecimal" >
     </EditText>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Número de periodes por años"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/pvann_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of years"
+        android:text="Número de años"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -79,7 +95,7 @@
         android:id="@+id/pvann_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:text="Calcular"
          />
 
     <TextView
@@ -92,9 +108,9 @@
 
     <Button
         android:id="@+id/pvann_infobutton"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="about" />
+        android:text="Información Sobre Interes Simple" />
 
 </LinearLayout>
 </ScrollView>

@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class F_PVAnn extends Fragment {
 	String answer_pv, answer_cf, answer_r, answer_t;
-	EditText pv,cf,r,t;
+	EditText pv,cf,r,n,t;
 	TextView answer;
 	int emptyfields = 0, choice = 0;
 	Button calc, info;
@@ -64,12 +64,15 @@ public class F_PVAnn extends Fragment {
 				cf = (EditText) getActivity().findViewById(R.id.pvann_cf);
 				r = (EditText) getActivity().findViewById(R.id.pvann_r);
 				t = (EditText) getActivity().findViewById(R.id.pvann_t);
+				n = (EditText) getActivity().findViewById(R.id.pvann_n);
 				answer = (TextView) getActivity().findViewById(R.id.pvann_answer);
 				//check which field was left empty, or if too many were left empty
 				if (pv.getText().toString().equals("")) {emptyfields++;choice = 1;}
 				if (cf.getText().toString().equals("")) {emptyfields++;choice = 2;}
 				if (r.getText().toString().equals("")) {emptyfields++;choice = 3;}
 				if (t.getText().toString().equals("")) {emptyfields++;choice = 4;}
+				if (n.getText().toString().equals("")) {emptyfields++;choice = 5;}
+
 				if (emptyfields > 1) {MiscMethods.ErrorToast(1);}
 				//if all is well, do respective calculation
 				else {
@@ -79,7 +82,9 @@ public class F_PVAnn extends Fragment {
 						double cf1 = Double.parseDouble(cf.getText().toString());
 						double r1 = Double.parseDouble(r.getText().toString());
 						double t1 = Double.parseDouble(t.getText().toString());
-						double result1 = (cf1/r1)*(1-(Math.pow(1+r1,-t1)));
+						double n1 = Double.parseDouble(n.getText().toString());
+
+						double result1 = (cf1/(r1/n1))*(1-(Math.pow(1+(r1/n1),-(t1*n1))));
 						result1 = MiscMethods.rounder(result1, 2);
 						answer.setText(answer_pv+ result1);
 						break;
@@ -87,7 +92,9 @@ public class F_PVAnn extends Fragment {
 						double pv2 = Double.parseDouble(pv.getText().toString());
 						double r2 = Double.parseDouble(r.getText().toString());
 						double t2 = Double.parseDouble(t.getText().toString());
-						double result2 = (pv2*r2)/(1-(Math.pow(1+r2,-t2)));
+						double n2 = Double.parseDouble(n.getText().toString());
+
+						double result2 = (pv2*(r2/n2))/(1-(Math.pow(1+(r2/n2),-(t2*n2))));
 						result2 = MiscMethods.rounder(result2, 2);
 						answer.setText(answer_cf + result2);
 						break;
@@ -98,10 +105,15 @@ public class F_PVAnn extends Fragment {
 						double pv4 = Double.parseDouble(pv.getText().toString());
 						double cf4 = Double.parseDouble(cf.getText().toString());
 						double r4 = Double.parseDouble(r.getText().toString());
-						double result4 = (Math.log(1/(1-(pv4*r4/cf4))))/(Math.log(1 + r4));
+                        double n4 = Double.parseDouble(n.getText().toString());
+
+                        double result4 = (Math.log(1/(1-(pv4*(r4/n4)/cf4))))/(Math.log(1 + (r4/n4)))/n4;
 						result4 = MiscMethods.rounder(result4, 4);
 						answer.setText(answer_t	+" "+ result4);
 						break;
+                        case 5:// n
+                            MiscMethods.ErrorToast(2);
+                            break;
 					default:
 						MiscMethods.ErrorToast(3);
 						break;

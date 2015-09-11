@@ -50,6 +50,15 @@ public class F_List extends ListFragment {
 
 			switch (id2) {
 			case 0:
+					Fragment frag00 = new F_IS();
+					Fragment frag99 = new F_PV_Info();
+					FragmentTransaction is = getActivity().getSupportFragmentManager().beginTransaction();
+				is.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+				is.replace(R.id.content1, frag00);
+				is.replace(R.id.content2, frag99);
+				is.commit();
+					break;
+			case 1:
 				Fragment frag0 = new F_PV();
 				Fragment frag01 = new F_PV_Info();
 				FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
@@ -58,7 +67,7 @@ public class F_List extends ListFragment {
 				ft.replace(R.id.content2, frag01);
 				ft.commit();
 				break;
-			case 1:
+			case 2:
 				Fragment frag1 = new F_PVAnn();
 				Fragment frag11 = new F_PVAnn_Info();
 				FragmentTransaction ft1 = getActivity().getSupportFragmentManager().beginTransaction();
@@ -67,7 +76,7 @@ public class F_List extends ListFragment {
 				ft1.replace(R.id.content2, frag11);
 				ft1.commit();
 				break;
-			case 2:
+			case 3:
 				Fragment frag2 = new F_PVAnnDue();
 				Fragment frag21 = new F_PVAnnDue_Info();
 				FragmentTransaction ft2 = getActivity().getSupportFragmentManager().beginTransaction();
@@ -76,7 +85,7 @@ public class F_List extends ListFragment {
 				ft2.replace(R.id.content2, frag21);
 				ft2.commit();
 				break;
-			case 3:
+			case 4:
 				Fragment frag3 = new F_FVAnn();
 				Fragment frag31 = new F_FVAnn_Info();
 				FragmentTransaction ft3 = getActivity().getSupportFragmentManager().beginTransaction();
@@ -85,7 +94,7 @@ public class F_List extends ListFragment {
 				ft3.replace(R.id.content2, frag31);
 				ft3.commit();
 				break;
-			case 4:
+			case 5:
 				Fragment frag4 = new F_FVAnnDue();
 				Fragment frag41 = new F_FVAnnDue_Info();
 				FragmentTransaction ft4 = getActivity().getSupportFragmentManager().beginTransaction();
@@ -94,7 +103,7 @@ public class F_List extends ListFragment {
 				ft4.replace(R.id.content2, frag41);
 				ft4.commit();
 				break;
-			case 5:
+			case 6:
 				Fragment frag5 = new F_Bonds();
 				Fragment frag51 = new F_Bonds_Info();
 				FragmentTransaction ft5 = getActivity().getSupportFragmentManager().beginTransaction();
@@ -103,8 +112,11 @@ public class F_List extends ListFragment {
 				ft5.replace(R.id.content2, frag51);
 				ft5.commit();
 				break;
-			case 6:
-				Fragment frag6 = new F_Growth();
+			case 7:
+
+				startActivity(new Intent(getActivity(), Amortizacion.class));
+				break;
+			/*	Fragment frag6 = new F_Growth();
 				Fragment frag61 = new F_Growth_Info();
 				FragmentTransaction ft6 = getActivity().getSupportFragmentManager().beginTransaction();
 				ft6.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
@@ -112,7 +124,7 @@ public class F_List extends ListFragment {
 				ft6.replace(R.id.content2, frag61);
 				ft6.commit();
 				break;
-			case 7:
+			case 8:
 				Fragment frag7 = new F_NPV();
 				Fragment frag71 = new F_NPV_Info();
 				FragmentTransaction ft7 = getActivity().getSupportFragmentManager().beginTransaction();
@@ -121,6 +133,7 @@ public class F_List extends ListFragment {
 				ft7.replace(R.id.content2, frag71);
 				ft7.commit();
 				break;
+				*/
 			default:
 				break;
 			}// end switch

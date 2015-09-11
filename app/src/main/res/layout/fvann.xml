@@ -27,7 +27,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Future Value"
+        android:text="Valor Futuro"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
@@ -43,7 +43,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cash Flow"
+        android:text="Valor de los Pagos"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -57,7 +57,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Interest Rate / Discount Rate"
+        android:text="Interes (1.xx) / Descuento (0.xx)"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -67,11 +67,28 @@
         android:ems="10"
         android:inputType="numberDecimal" >
     </EditText>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Número de periodes por años"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/fvann_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center_horizontal" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of years"
+        android:text="Número de años"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -90,18 +107,21 @@
          />
 
     <TextView
-        android:id="@+id/fvann_answer"
+        android:id="@+id/answer_t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0" 
         android:padding="10dp"
     	android:textAppearance="?android:attr/textAppearanceLarge" />
-
+
+
+
+
     <Button
         android:id="@+id/fvann_infobutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Information" />
+        android:text="Información Sobre Anualidad" />
 
 </LinearLayout>
 </ScrollView>

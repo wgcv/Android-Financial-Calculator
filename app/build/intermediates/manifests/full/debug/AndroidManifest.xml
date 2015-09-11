@@ -8,6 +8,10 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="22" />
 
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.mwerner.mycalc.finance.App"
         android:icon="@drawable/ic_launcher"
@@ -24,6 +28,14 @@
         </activity>
         <activity android:name="com.mwerner.mycalc.finance.DetailsActivity" />
         <activity android:name="com.mwerner.mycalc.finance.DetailsActivity2" />
+        <activity
+            android:name="com.mwerner.mycalc.finance.Amortizacion"
+            android:label="@string/title_activity_amortizacion" >
+        </activity>
+        <activity
+            android:name="com.mwerner.mycalc.finance.Amortizacion2"
+            android:label="@string/title_activity_amortizacion2" >
+        </activity>
     </application>
 
 </manifest>
