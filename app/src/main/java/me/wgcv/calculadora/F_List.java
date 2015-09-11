@@ -115,6 +115,13 @@ public class F_List extends ListFragment {
 
 				startActivity(new Intent(getActivity(), Amortizacion.class));
 				break;
+				case 8:
+					Fragment Informacion = new Informacion();
+					FragmentTransaction Informacion8 = getActivity().getSupportFragmentManager().beginTransaction();
+					Informacion8.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+					Informacion8.replace(R.id.content1, Informacion);
+					Informacion8.commit();
+					break;
 			/*	Fragment frag6 = new F_Growth();
 				Fragment frag61 = new F_Growth_Info();
 				FragmentTransaction ft6 = getActivity().getSupportFragmentManager().beginTransaction();

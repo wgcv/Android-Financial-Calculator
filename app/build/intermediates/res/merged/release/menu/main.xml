@@ -3,4 +3,4 @@
         android:title="@string/menu_settings"
         android:orderInCategory="100" />
 </menu>
-<!-- From: file:/home/wgcv/dev/MyCalcFinance/app/src/main/res/menu/main.xml -->
+<!-- From: file:/home/wgcv/dev/CalculadoraFinanciera/app/src/main/res/menu/main.xml -->

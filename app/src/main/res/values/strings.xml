@@ -14,6 +14,7 @@
         <item>Anualidad Anticipada - Valor futuro</item>
         <item>Valor de Bonos</item> <!-- Bond Pricing -->
         <item>Amortización</item>
+        <item>Información</item>
     </string-array>
 
     <string name="is0">Interes Simple</string>
@@ -86,7 +87,7 @@
     <string name="explain_PeriodsPerYear">El número de períodos por año: Para interes compuesto (se aplica) que se paga varias veces al año , se especifica la frecuencia en un año que se aplica una tasa de interés anual</string>
     <string name="explain_CashFlow">Flujo de Caja : El flujo de caja anual recibido o hace cada año por el número de años especificado</string>
 	<string name="explain_Formula">La siguiete ecuacion es:</string>
-	<string name="explain_Instructions">Por favor, rellene los campos , dejando uno vacío . Da calcular y se obtendra el valor faltante.</string>
+	<string name="explain_Instructions">Por favor, rellene los campos , dejando uno vacío . Da calcular y se obtendrá el valor faltante.</string>
 	<string name="explain_Bonds">Bonos: El valor presente que un bono que vale hoy en día, teniendo en cuenta tanto el pago de su valor nominal con descuento y la anualidad descontado de los pagos de cupones.</string>
 	<string name="explain_Coupon">Los pagos de cupón : El pago de cupón es el dinero que usted recibe cada año que tiene en sus manos el bono. A veces, usted recibirá pagos de cupones varias veces al año esto se define a continuación con el número de períodos</string>
     <string name="explain_Div0">DIV0 : Los dividendos que se pagaron a cabo este año.</string>
@@ -95,4 +96,7 @@
     <string name="title_activity_amortizacion">Amortizacion</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_amortizacion2">Amortizacion2</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -57,7 +57,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Interes (1.xx) / Descuento (0.xx)"
+        android:text="Interés (1.xx) / Descuento (0.xx)"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Número de periodes por años"
+        android:text="Número de periodos por años"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -87,7 +87,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of years"
+        android:text="Número de años"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -102,8 +102,8 @@
         android:id="@+id/fvanndue_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate"
-         />
+        android:text="Calcular"
+       />
 
     <TextView
         android:id="@+id/pv_answer"
@@ -121,4 +121,4 @@
         android:text="Información Sobre Anualidad Anticpiada" />
 
 </LinearLayout>
-</ScrollView><!-- From: file:/home/wgcv/dev/MyCalcFinance/app/src/main/res/layout/fvanndue.xml -->
+</ScrollView><!-- From: file:/home/wgcv/dev/CalculadoraFinanciera/app/src/main/res/layout/fvanndue.xml -->

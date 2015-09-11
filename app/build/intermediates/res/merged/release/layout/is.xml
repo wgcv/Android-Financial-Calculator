@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Interes (1.xx) / Descuento (0.xx)"
+            android:text="Interés (1.xx) / Descuento (0.xx)"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
@@ -72,27 +72,13 @@
             android:inputType="numberDecimal" />
 
         <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Número de periodes por años"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <EditText
-            android:id="@+id/pv_n"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal" />
-
-        <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Númerop de años"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:text="Número de años"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+           />
 
         <EditText
             android:id="@+id/pv_t"
@@ -123,4 +109,4 @@
             />
     </LinearLayout>
 
-</ScrollView><!-- From: file:/home/wgcv/dev/MyCalcFinance/app/src/main/res/layout/is.xml -->
+</ScrollView><!-- From: file:/home/wgcv/dev/CalculadoraFinanciera/app/src/main/res/layout/is.xml -->

@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Interes (1.xx) / Descuento (0.xx)"
+            android:text="Interés (1.xx) / Descuento (0.xx)"
             android:textAppearance="?android:attr/textAppearanceLarge"
              />
 
@@ -118,4 +118,4 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
     </LinearLayout>
 
-</ScrollView><!-- From: file:/home/wgcv/dev/MyCalcFinance/app/src/main/res/layout-xlarge/is.xml -->
+</ScrollView><!-- From: file:/home/wgcv/dev/CalculadoraFinanciera/app/src/main/res/layout-xlarge/is.xml -->

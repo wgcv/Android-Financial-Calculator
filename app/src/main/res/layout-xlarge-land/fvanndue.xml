@@ -57,7 +57,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Interes (1.xx) / Descuento (0.xx)"
+        android:text="Interés (1.xx) / Descuento (0.xx)"
         android:padding="10dp"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
     <EditText
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Número de periodes por años"
+        android:text="Número de periodos por años"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -102,7 +102,7 @@
         android:id="@+id/fvanndue_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:text="Calcular"
          />
 
     <TextView

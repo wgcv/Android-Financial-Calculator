@@ -69,8 +69,7 @@ public class F_IS extends Fragment {
 				if (pv.getText().toString().equals("")) {emptyfields++;choice = 1;}
 				if (fv.getText().toString().equals("")) {emptyfields++;choice = 2;}
 				if (r.getText().toString().equals("")) {emptyfields++;choice = 3;}
-				if (n.getText().toString().equals("")) {emptyfields++;choice = 4;}
-				if (t.getText().toString().equals("")) {emptyfields++;choice = 5;}
+				if (t.getText().toString().equals("")) {emptyfields++;choice = 4;}
 				if (emptyfields > 1) {MiscMethods.ErrorToast(1);}
 				else{
 					emptyfields--;
@@ -78,40 +77,35 @@ public class F_IS extends Fragment {
 					case 1:// pv
 						double fv1 = Double.parseDouble(fv.getText().toString());
 						double r1 = Double.parseDouble(r.getText().toString());
-						double n1 = Double.parseDouble(n.getText().toString());
 						double t1 = Double.parseDouble(t.getText().toString());
-						double result1 = fv1/(Math.pow((r1/n1),n1*t1));
+						double result1 = fv1/((1+r1)*(t1));
 						result1 = MiscMethods.rounder(result1, 2);
 						answer.setText(answer_pv + result1);
 						break;
 					case 2:// fv
 						double pv2 = Double.parseDouble(pv.getText().toString());
 						double r2 = Double.parseDouble(r.getText().toString());
-						double n2 = Double.parseDouble(n.getText().toString());
 						double t2 = Double.parseDouble(t.getText().toString());
-						double result2 = pv2*(Math.pow((r2 / n2), n2 * t2));
+						double result2 = pv2 *((1+r2)*(t2));
 						result2 = MiscMethods.rounder(result2, 2);
 						answer.setText(answer_fv + result2);
 						break;
 					case 3:// r
 						double pv3 = Double.parseDouble(pv.getText().toString());
 						double fv3 = Double.parseDouble(fv.getText().toString());
-						double n3 = Double.parseDouble(n.getText().toString());
 						double t3 = Double.parseDouble(t.getText().toString());
-						double result3 = ((Math.pow(fv3 / pv3, (1 / (n3 * t3)))))* n3;
+						double result3 = (pv3/(fv3*t3));
 						result3 = (double) MiscMethods.rounder(result3, 4);
-						answer.setText(answer_r	+" "+ result3 + " / " + (result3*100)+"%");
+						answer.setText(answer_r	+" "+ result3 + " / " + (result3 * 100) + "%");
 						break;
-					case 4:// n
-						MiscMethods.ErrorToast(2);
-						break;
-					case 5:// t
+
+						case 4:// t
 						double pv5 = Double.parseDouble(pv.getText().toString());
 						double fv5 = Double.parseDouble(fv.getText().toString());
 						double n5 = Double.parseDouble(n.getText().toString());
 						double r5 = Double.parseDouble(r.getText().toString());
-						double result5 = (Math.log((fv5 / pv5))) / ((Math.log(((r5 / n5)))) * n5);
-						result5 = (double) MiscMethods.rounder(result5, 2);
+							double result5 = (pv5/(fv5*r5));
+							result5 = (double) MiscMethods.rounder(result5, 2);
 						answer.setText(answer_t +" "+ result5);
 						break;
 					default:

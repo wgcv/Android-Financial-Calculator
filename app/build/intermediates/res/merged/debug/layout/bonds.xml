@@ -48,7 +48,7 @@
         android:inputType="numberDecimal" >
     </EditText>
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Número de años "
@@ -114,4 +114,4 @@
         android:text="Información Sobre Bonos" />
 
 </LinearLayout>
-</ScrollView><!-- From: file:/home/wgcv/dev/MyCalcFinance/app/src/main/res/layout/bonds.xml -->
+</ScrollView><!-- From: file:/home/wgcv/dev/CalculadoraFinanciera/app/src/main/res/layout/bonds.xml -->

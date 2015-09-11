@@ -82,6 +82,13 @@ public class DetailsActivity extends FragmentActivity {
 			case 7:
 				startActivity(new Intent(this, Amortizacion.class));
 				break;
+			case 8:
+				Fragment Informacion = new Informacion();
+				FragmentTransaction Informacion8 =  getSupportFragmentManager().beginTransaction();
+				Informacion8.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+				Informacion8.replace(R.id.details1, Informacion);
+				Informacion8.commit();
+				break;
 				/*
 				Fragment frag6 = new F_Growth();
 				FragmentTransaction ft6 = getSupportFragmentManager()

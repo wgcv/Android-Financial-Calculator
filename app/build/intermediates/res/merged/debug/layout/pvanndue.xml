@@ -80,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Número de periodes por años"
+            android:text="Número de periodos por años"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
@@ -128,4 +128,4 @@
 
     </LinearLayout>
 
-</ScrollView><!-- From: file:/home/wgcv/dev/MyCalcFinance/app/src/main/res/layout/pvanndue.xml -->
+</ScrollView><!-- From: file:/home/wgcv/dev/CalculadoraFinanciera/app/src/main/res/layout/pvanndue.xml -->
