@@ -70,7 +70,7 @@
     <string name="answer_r">La tasa de interés es :</string>
     <string name="answer_t">El número de años es:</string>
     <string name="answer_fvann">El valor futuro de los flujos anuales de efectivo es: $</string>
-    <string name="answer_bonds">El valor actual de este bono es: $</string>
+    <string name="answer_bonds">El valor actual del bono es: $</string>
     <string name="answer_growth">La tasa de cultivo es:</string>
     <string name="answer_div0">El Dividendo hoy es: $</string>
     <string name="answer_div_t">El Dividendo hace años X fue: $</string>

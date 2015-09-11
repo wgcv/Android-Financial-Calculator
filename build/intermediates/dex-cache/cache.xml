@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jar="/home/wgcv/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/pre-dexed/debug/classes-79ad8c569834cc9606fc61cc5ce7068b0eca09bb.jar" />
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-47033df3e4ccad24206a66ee5f3bc5235ccab2bb.jar" />
     </item>
     <item
         jar="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
@@ -16,11 +16,11 @@
         <dex dex="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-551154f615ee4df037853e10f1a7cfeeee100f18.jar" />
     </item>
     <item
-        jar="/home/wgcv/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jar="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-47033df3e4ccad24206a66ee5f3bc5235ccab2bb.jar" />
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/wgcv/dev/MyCalcFinance/app/build/intermediates/pre-dexed/debug/classes-79ad8c569834cc9606fc61cc5ce7068b0eca09bb.jar" />
     </item>
 
 </items>
